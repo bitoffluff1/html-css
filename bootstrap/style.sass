@@ -1,0 +1,291 @@
+
+/* голубой фон*/
+$brand-primary: #29c5e6
+/*фон панелей*/
+$panel-bg: #f3f3f3
+/*убираем скругление у блоков*/
+$border-radius-base: 0
+/*основной цвет текста на странице*/
+$text-color: #8f8f8f
+/*серый цвет текста в полях*/
+$input-color: #b2b2b2
+
+*
+  margin: 0
+  padding: 0
+
+html,
+body
+  height: 100%
+
+.all
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+
+.container
+  max-width: 960px
+  margin: 0 auto
+  flex: 1
+
+.form-control
+  box-shadow: none
+  border-radius: $border-radius-base
+  margin-right: 0 !important
+  border: 0.063rem solid #e7e7e7
+  background-color: #f3f3f3
+  color: $input-color
+  font-size: 0.75rem
+  font-weight: 400
+  letter-spacing: 0.03rem
+
+.btn
+  border-radius: $border-radius-base
+
+body
+  border-top: 5px solid #7e7e7e
+  background-image: url(img/bg.png)
+  margin: 0
+  padding: 0
+  font-family: 'Oswald', sans-serif
+
+.form-inline
+  flex-flow: row nowrap
+
+.bg-light
+  background: none !important
+
+.btn-outline-success
+  color: #fefefe
+  font-size: 1rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.035rem
+  background-color: $brand-primary
+  border: none
+
+
+  &:hover
+    color: $brand-primary
+    background-color: #fefefe
+    outline: 1px solid $brand-primary
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show > .btn-outline-success.dropdown-toggle
+  color: $brand-primary
+  background-color: #fefefe
+  border: 1px solid $brand-primary
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-success.dropdown-toggle:focus
+  box-shadow: none
+
+header
+  padding: 20px 0
+
+.col_logo
+  text-align: left !important
+
+.col_search
+  text-align: right !important
+
+.wrapper
+  padding: 0 0 50px 0
+
+.nav
+  padding: 0
+  border: 0.063rem solid #e7e7e7
+  background-color: $panel-bg
+  min-height: 37px
+
+
+.nav-link
+  color: $input-color
+  font-size: 0.875rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.035rem
+  padding-right: 2.07rem
+  padding-left: 2.07rem
+
+.nav-item:focus, .nav-item:hover
+  background-color: $brand-primary
+  color: #fff
+
+.nav-link:focus, .nav-link:hover
+  color: #fff
+  font-size: 0.875rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.035rem
+
+.heading
+  height: 2.5rem
+  background: transparent url(img/Title_pattern.jpg)
+  margin: 1.87rem 0
+  padding-left: 1.25rem
+
+.heading-text
+  display: inline-block
+  color: #7e7e7e
+  font: normal 40px/40px 'Oswald', sans-serif
+  background: url(img/bg.png)
+  padding: 0 0.625rem
+  text-transform: uppercase
+
+.list-group
+  text-decoration: none
+
+.list-group-item
+  border: 0.063rem solid #e7e7e7
+  background-color: #f3f3f3
+  display: list-item
+  list-style-type: square
+  list-style-position: inside
+  color: $text-color
+
+  &:hover
+    color: $brand-primary
+
+.list-group-link
+  color: #8f8f8f
+  font-size: 0.875rem
+  font-weight: 300
+  text-transform: uppercase
+
+  &:hover
+    color: $brand-primary
+    text-decoration: none
+
+.list-group-item:first-child
+  border-radius: $border-radius-base
+
+.list-group-item:last-child
+  border-radius: $border-radius-base
+
+.card
+  margin-top: 2rem
+
+.card-body
+  padding: 0
+  background-color: $brand-primary
+
+
+.card-text
+  margin-top: 13px
+  margin-bottom: 13px
+  margin-left: 0.7rem
+  color: #fff
+  font-size: 0.875rem
+  line-height: 0.875rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.035rem
+
+.card-text:last-child
+  margin-bottom: 13px
+
+
+.jumbotron
+  background-color: $brand-primary
+  padding: 1.5rem 1rem
+
+.display-4
+  color: #ffffff
+  font-size: 2.063rem
+  font-weight: 300
+  font-style: italic
+  text-transform: uppercase
+
+.lead
+  color: #1d8ea6
+  font-size: 1.25rem
+  font-weight: 300
+  margin: 0
+  text-align: right
+
+.index-text
+  color: $text-color
+  font-size: 0.75rem
+  font-weight: 400
+
+.thumbnail
+  box-shadow: inset 0 0 0 0.125rem #fff
+  border: 0.063rem solid #c9c9c9
+  background-color: #dbdbdb
+  margin: 5px 0
+
+.header
+  background-color: $brand-primary
+  color: #fff
+  text-transform: uppercase
+
+  &_our-team
+    font-size: 1.875rem
+    font-weight: 300
+    letter-spacing: 0.075rem
+    margin-top: 2rem
+    padding-top: 8px
+    padding-bottom: 8px
+    padding-left: 10px
+
+.text-top
+  color: $text-color
+  font-size: 1rem
+  font-weight: 300
+  margin-top: 8px
+  margin-bottom: 8px
+
+.text-button
+  color: $brand-primary
+  font-size: 0.875rem
+  font-weight: 300
+  margin-top: 0
+  margin-bottom: 17px
+
+footer
+  background-color: #7e7e7e
+  min-height: 110px
+
+.footer_header
+  color: #fff
+  font-size: 0.875rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.035rem
+  border-bottom: 1px solid #919191
+  padding-top: 15px
+  padding-bottom: 5px
+  margin-bottom: 0
+
+.footer_text
+  color: #dbdbdb
+  font-size: 0.688rem
+  font-weight: 400
+  margin: 0
+
+.footer_a
+  text-decoration: none
+  font-size: 0.75rem
+
+  &:hover
+    color: $brand-primary
+    text-decoration: none
+
+.footer-icon
+  margin-top: 2rem
+
+.icon
+  color: #dbdbdb
+  font-size: 1.1rem
+  font-weight: 300
+  padding: 0.5rem
+
+  &:hover
+    color: $brand-primary
+
+.footer-logo
+  margin-top: 20px
+  font-size: 10px
+
+.col
+  text-align: center
